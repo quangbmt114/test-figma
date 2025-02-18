@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Poppins, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+.feature-box {
+    width: 782px;
+    height: 852px;
+    position: absolute;
+    background: #F7F7F8;
+    border-radius: 20px;
+}
+.gradient-box {
+    width: 791px;
+    height: 901px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(221, 212, 197, 0) 0%, #8E887E 100%);
+}
+.feature-image {
+    width: 687px;
+    height: 667px;
+    position: absolute;
+    left: 59px;
+    top: 185px;
+}
+.text-large {
+    font-size: 150px;
+    font-weight: 500;
+    color: white;
+}
+.text-medium {
+    font-size: 31px;
+    font-weight: 500;
+    color: white;
+}
+.text-small {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.4;
+    color: #1E1E1E;
+}
+.button {
+    width: 124px;
+    height: 48px;
+    background: #827C6C;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.info-box {
+    width: 782px;
+    height: 371px;
+    position: absolute;
+    background: #F7F7F8;
+    border-radius: 20px;
+    text-align: center;
+}
+.info-text {
+    font-size: 31px;
+    font-weight: 500;
+    color: #1E1E1E;
+    padding: 45px;
+}
+.feature-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+.feature-item {
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+.divider {
+    height: 100px;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.11);
+}
+.image-box {
+    width: 782px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.shop-button {
+    width: 124px;
+    height: 46px;
+    background: #827C6C;
+    border-radius: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.block-flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
