@@ -1,530 +1,167 @@
-.section-collapsible-content-type-5-multi-row-content,
-.section-collapsible-content-type-5-multi-row-content * {
-  box-sizing: border-box;
+:root {
+  --color-dark: #5b4034;
+  --color-light: #faf7f2;
+  --color-muted: #a08b7d;
+  --color-highlight: #8c665a;
+  --font-family: "Georgia", serif;
+  --font-size-sm: 14px;
+  --font-size-md: 18px;
+  --font-size-lg: 32px;
+  --font-size-xl: 40px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+  --border-radius-lg: 12px;
 }
-.section-collapsible-content-type-5-multi-row-content {
-  background: var(--background, #fff9f5);
-  height: 1214px;
-  position: relative;
-}
-.frame-6825 {
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-dark);
+  background-color: var(--color-light);
   display: flex;
-  flex-direction: row;
-  gap: 12px;
-  align-items: center;
   justify-content: center;
-  width: 1728px;
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 32px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-.here-some-highlight-in-package {
-  color: var(--text, #462b20);
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* Subheading */
+.sub-heading {
+  color: #462b20;
+  font-size: 20px;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 200;
+  line-height: 24px;
+  word-wrap: break-word;
   text-align: center;
-  font-family: var(--20serif-font-family, "InstrumentSerif-Italic", sans-serif);
-  font-size: var(--20serif-font-size, 20px);
-  line-height: var(--20serif-line-height, 24px);
-  font-weight: var(--20serif-font-weight, 400);
-  font-style: var(--20serif-font-style, italic);
-  opacity: 0.85;
-  position: relative;
+  font-style: italic;
+  margin-bottom: var(--spacing-xl);
 }
+
+/* Grid Layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 20px 50px;
+}
+
+/* Left & Right Image Sections */
+.left-images,
+.right-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 170px;
+}
+
+.img-small {
+  width: 180px;
+  height: 250px;
+  align-self: flex-start;
+}
+
+.img-large {
+  width: 250px;
+  height: 360px;
+  align-self: flex-end;
+}
+
+/* Center Content */
+.center-content {
+  text-align: center;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.center-content-1 {
+  text-align: center;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-title {
+  color: #462b20;
+  font-size: 58px;
+  font-family: "Instrument Serif";
+  font-weight: 400;
+  line-height: 61px;
+  word-wrap: break-word;
+  margin-bottom: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.section-sub {
+  color: #462b20;
+  font-size: 20px;
+  font-family: "Instrument Serif";
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  display: flex;
+  gap: 14px;
+}
+
+.highlight {
+  opacity: 1;
+  color: #462b20;
+  font-size: 20px;
+  font-family: "Instrument Serif";
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
 .divider {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  width: 719px;
-  height: auto;
-  position: absolute;
-  left: 95.5px;
-  top: 43.5px;
-  transform: translate(0px, 0px);
-  overflow: visible;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.11);
 }
-.divider2 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  width: 719px;
-  height: auto;
-  position: absolute;
-  left: 1104.5px;
-  top: 43.5px;
-  transform: translate(0px, 0px);
-  overflow: visible;
-}
-.frame-7324 {
-  display: flex;
-  flex-direction: column;
-  gap: 56px;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 144px;
-}
-.frame-7322 {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.planing-design {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --heading-font-family,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--heading-font-size-h4, 58px);
-  line-height: var(--heading-line-height-h4, 61px);
-  letter-spacing: var(--heading-letter-spacing-h4, -1px);
-  font-weight: var(--heading-font-weight-font-weight-heading-subtle, 400);
-  position: relative;
-}
-.frame-7228 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-6826 {
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.budget-planning {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  position: relative;
-}
-.divider3 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.bridal-salon-selection {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.divider4 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.bridesmaid-dres-selection {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.divider5 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.wedding-cake {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.the-design-is-the-imagination-creativity-and-inspiration-that-makes-your-event-unique-we-work-closely-with-you-to-sleuth-out-your-style-and-then-use-that-insight-to-develop-every-aesthetic-component-of-your-event-from-stationery-and-lighting-to-flowers-and-furniture {
-  color: var(--text, #462b20);
-  text-align: center;
-  font-family: var(--body-font-family-normal, "Inter-Regular", sans-serif);
-  font-size: var(--body-font-size-body-md, 16px);
-  line-height: var(--body-line-height-md-nomal, 25px);
-  font-weight: var(--body-font-weight-subtle, 400);
+
+.section-description {
   opacity: 0.85;
-  position: relative;
-  width: 618px;
-}
-.divider6 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 160px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.frame-7321 {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.floral-decor {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --heading-font-family,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--heading-font-size-h4, 58px);
-  line-height: var(--heading-line-height-h4, 61px);
-  letter-spacing: var(--heading-letter-spacing-h4, -1px);
-  font-weight: var(--heading-font-weight-font-weight-heading-subtle, 400);
-  position: relative;
-}
-.frame-6829 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-6827 {
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.floral {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  position: relative;
-}
-.divider7 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.decor-selection {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.divider8 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.hair-makeup {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.divider9 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.lighting-sound {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.from-maintaining-your-budget-and-managing-rsv-ps-to-curating-the-ideal-creative-team-and-negotiating-vendor-contracts-we-re-here-to-labor-over-logistics-so-you-don-t-have-to-you-ll-have-a-clear-understanding-of-what-s-coming-next-throughout-the-process-without-ever-being-inundated-with-unnecessary-information-options-that-aren-t-a-right-fit-or-tedious-to-dos {
-  color: var(--text, #462b20);
   text-align: center;
-  font-family: var(--body-font-family-normal, "Inter-Regular", sans-serif);
-  font-size: var(--body-font-size-body-md, 16px);
-  line-height: var(--body-line-height-md-nomal, 25px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.85;
-  position: relative;
-  width: 636px;
+  color: #462b20;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 25px;
+  word-wrap: break-word;
 }
-.divider10 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 160px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.frame-7323 {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.paperie-branding {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --heading-font-family,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--heading-font-size-h4, 58px);
-  line-height: var(--heading-line-height-h4, 61px);
-  letter-spacing: var(--heading-letter-spacing-h4, -1px);
-  font-weight: var(--heading-font-weight-font-weight-heading-subtle, 400);
-  position: relative;
-}
-.frame-6830 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-6828 {
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.invitations {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  position: relative;
-}
-.divider11 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.venue-selection-management {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.divider12 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 29px;
-  height: 1px;
-  position: relative;
-  overflow: visible;
-}
-.stationery {
-  color: var(--text, #462b20);
-  text-align: left;
-  font-family: var(
-    --body-font-family-serif,
-    "InstrumentSerif-Regular",
-    sans-serif
-  );
-  font-size: var(--body-font-size-body-serif-sm, 20px);
-  line-height: var(--body-line-height-serif-sm-nomal, 24px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.4;
-  position: relative;
-}
-.we-ll-collaborate-to-develop-an-aesthetic-that-speaks-to-your-soul-and-stems-from-your-story-from-creating-design-boards-and-sourcing-artisanal-items-to-keeping-vendors-on-the-same-page-and-perfecting-every-last-touchpoint-across-your-entire-affair-we-re-here-to-deliver-a-cohesive-collection-of-meaningful-moments-that-together-create-the-wedding-of-your-wildest-dreams {
-  color: var(--text, #462b20);
-  text-align: center;
-  font-family: var(--body-font-family-normal, "Inter-Regular", sans-serif);
-  font-size: var(--body-font-size-body-md, 16px);
-  line-height: var(--body-line-height-md-nomal, 25px);
-  font-weight: var(--body-font-weight-subtle, 400);
-  opacity: 0.85;
-  position: relative;
-  width: 628px;
-}
-.rectangle-68 {
-  width: 274px;
-  height: 385px;
-  position: absolute;
-  left: 1550px;
-  top: 168px;
-  object-fit: cover;
-}
-.rectangle-67 {
-  width: 183px;
-  height: 257px;
-  position: absolute;
-  left: 113px;
-  top: 210px;
-  object-fit: cover;
-}
-.rectangle-70 {
-  width: 183px;
-  height: 257px;
-  position: absolute;
-  left: 1495px;
-  top: 710px;
-  object-fit: cover;
-}
-.rectangle-69 {
-  width: 253px;
-  height: 363px;
-  position: absolute;
-  left: 169px;
-  top: 646px;
-  object-fit: cover;
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .left-images,
+  .right-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .img-small,
+  .img-large {
+    width: 45%;
+  }
 }
