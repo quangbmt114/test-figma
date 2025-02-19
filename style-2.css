@@ -1,212 +1,115 @@
-.collapsible-content-4,
-.collapsible-content-4 * {
-  box-sizing: border-box;
+:root {
+  --color-dark: #1a202c;
+  --color-light: #ffffff;
+  --color-muted: #a0aec0;
+  --color-border: #e2e8f0;
+  --font-family: "Poppins", sans-serif;
+  --font-size-sm: 14px;
+  --font-size-md: 18px;
+  --font-size-lg: 32px;
+  --font-size-xl: 40px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --border-radius-lg: 12px;
 }
-.collapsible-content-4 {
-  background: var(--background, #ffffff);
-  height: 65.375rem;
-  position: relative;
-  overflow: hidden;
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
-.group-6438 {
-  position: absolute;
-  inset: 0;
+
+/* Grid Layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-lg);
+  width: 100%;
+  height: 100%;
 }
-.rectangle-3005 {
-  width: 47.75rem;
-  height: 53.1875rem;
-  position: absolute;
-  left: 41rem;
-  top: 4.75rem;
-  object-fit: cover;
+
+.accordion-text {
+  color: #402c22;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 23px;
+  word-wrap: break-word;
 }
-.rectangle-3004 {
-  width: 34.5625rem;
-  height: 34.4375rem;
-  position: absolute;
-  left: 89.75rem;
-  top: 4.75rem;
-  object-fit: cover;
+
+/* Text Section */
+.text-section {
+  padding: 100px 20px 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-md);
 }
-.divider-3 {
-  width: 28.25rem;
-  height: 0rem;
-  position: absolute;
-  left: 3.6875rem;
-  top: 34.125rem;
-  overflow: visible;
+
+.sub-heading {
+  color: #402c22;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
 }
-.divider-5 {
-  width: 28.25rem;
-  height: 0rem;
-  position: absolute;
-  left: 3.6875rem;
-  top: 30.1875rem;
-  overflow: visible;
-}
-.divider-4 {
-  width: 28.25rem;
-  height: 0rem;
-  position: absolute;
-  left: 3.6875rem;
-  top: 38.0625rem;
-  overflow: visible;
-}
-.group-6455 {
-  width: 28.25rem;
-  height: 1.6875rem;
-  position: static;
-}
-.upholstery {
-  color: var(--text, #402c22);
-  text-align: left;
-  font-family: var(
-    --pc-heading-h6-font-family,
-    "OptimaNovaLtPro-Regular",
-    sans-serif
-  );
-  font-size: var(--pc-heading-h6-font-size, 1.375rem);
-  line-height: var(--pc-heading-h6-line-height, 122%);
-  letter-spacing: var(--pc-heading-h6-letter-spacing, -0.02em);
-  font-weight: var(--pc-heading-h6-font-weight, 400);
-  position: absolute;
-  left: 3.6875rem;
-  top: 31.4375rem;
-  width: 28.25rem;
-}
-._24-px-plus {
-  width: 0.875rem;
-  height: 0.875rem;
-  position: absolute;
-  left: calc(50% - 29.375rem);
-  top: 31.6875rem;
-  overflow: visible;
-}
-.group-6483 {
-  width: 28.25rem;
-  height: 1.6875rem;
-  position: static;
-}
-.cushion {
-  color: var(--text, #402c22);
-  text-align: left;
-  font-family: var(
-    --pc-heading-h6-font-family,
-    "OptimaNovaLtPro-Regular",
-    sans-serif
-  );
-  font-size: var(--pc-heading-h6-font-size, 1.375rem);
-  line-height: var(--pc-heading-h6-line-height, 122%);
-  letter-spacing: var(--pc-heading-h6-letter-spacing, -0.02em);
-  font-weight: var(--pc-heading-h6-font-weight, 400);
-  position: absolute;
-  left: 3.6875rem;
-  top: 21.9375rem;
-  width: 28.25rem;
-}
-._24-px-minus {
-  width: 0.875rem;
-  height: 0.875rem;
-  position: absolute;
-  left: calc(50% - 29.375rem);
-  top: 22rem;
-  overflow: visible;
-}
-.group-6456 {
-  width: 28.25rem;
-  height: 1.6875rem;
-  position: static;
-}
-.frame {
-  color: var(--text, #402c22);
-  text-align: left;
-  font-family: var(
-    --pc-heading-h6-font-family,
-    "OptimaNovaLtPro-Regular",
-    sans-serif
-  );
-  font-size: var(--pc-heading-h6-font-size, 1.375rem);
-  line-height: var(--pc-heading-h6-line-height, 122%);
-  letter-spacing: var(--pc-heading-h6-letter-spacing, -0.02em);
-  font-weight: var(--pc-heading-h6-font-weight, 400);
-  position: absolute;
-  left: 3.6875rem;
-  top: 35.375rem;
-  width: 28.25rem;
-}
-._24-px-plus2 {
-  width: 0.875rem;
-  height: 0.875rem;
-  position: absolute;
-  left: calc(50% - 29.375rem);
-  top: 35.625rem;
-  overflow: visible;
-}
-.group-6457 {
-  width: 28.25rem;
-  height: 1.75rem;
-  position: static;
-}
-.finish {
-  color: var(--text, #402c22);
-  text-align: left;
-  font-family: var(
-    --pc-heading-h6-font-family,
-    "OptimaNovaLtPro-Regular",
-    sans-serif
-  );
-  font-size: var(--pc-heading-h6-font-size, 1.375rem);
-  line-height: var(--pc-heading-h6-line-height, 122%);
-  letter-spacing: var(--pc-heading-h6-letter-spacing, -0.02em);
-  font-weight: var(--pc-heading-h6-font-weight, 400);
-  position: absolute;
-  left: 3.6875rem;
-  top: 39.3125rem;
-  width: 28.25rem;
-}
-._24-px-plus3 {
-  width: 0.875rem;
-  height: 0.875rem;
-  position: absolute;
-  left: calc(50% - 29.375rem);
-  top: 39.25rem;
-  overflow: visible;
-}
-.the-perfect-accent-chair-for-any-room {
-  color: var(--text, #402c22);
-  text-align: left;
-  font-family: "Optima-Regular", sans-serif;
-  font-size: 3.9375rem;
-  line-height: 106%;
-  letter-spacing: -0.02em;
+
+.heading {
+  font-size: 63px;
+  margin: 0;
+  font-family: "Optima", sans-serif;
   font-weight: 400;
-  position: absolute;
-  left: 3.6875rem;
-  top: 11.5rem;
-  width: 31.125rem;
+  line-height: 66.78px;
+  word-wrap: break-word;
 }
-.construction {
-  color: var(--text, #402c22);
-  text-align: left;
-  font-family: var(--pc-button-small-font-family, "Inter-Medium", sans-serif);
-  font-size: var(--pc-button-small-font-size, 1rem);
-  line-height: var(--pc-button-small-line-height, 1.25rem);
-  font-weight: var(--pc-button-small-font-weight, 500);
-  opacity: 0.7;
-  position: absolute;
-  left: 3.8125rem;
-  top: 9.3125rem;
+
+/* Accordion */
+
+.accordion-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-md) 0;
+  cursor: pointer;
+  width: 80%;
 }
-.the-thayer-s-seat-cushion-features-a-core-of-high-resiliency-foam-wrapped-with-a-layer-of-microfiber-for-a-structured-supportive-sit {
-  color: var(--text, #402c22);
-  text-align: left;
-  font-family: var(--pc-body-b3-font-family, "Inter-Medium", sans-serif);
-  font-size: var(--pc-body-b3-font-size, 1rem);
-  line-height: var(--pc-body-b3-line-height, 1.4375rem);
-  font-weight: var(--pc-body-b3-font-weight, 500);
-  opacity: 0.8;
-  position: absolute;
-  left: 3.6875rem;
-  top: 24.0625rem;
-  width: 25.1875rem;
+
+.accordion-header {
+  color: #402c22;
+  font-size: 22px;
+  font-family: "Optima nova LT Pro", sans-serif;
+  font-weight: 400;
+  line-height: 26.84px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* Image Section */
+.image-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.main-image img,
+.side-image img {
+  padding: 100px 20px 100px 0;
+  width: 100%;
+  display: block;
 }
